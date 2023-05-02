@@ -1,5 +1,6 @@
 import React from 'react'
-import UserResults from '../components/users/UserResults'
+import Userresults from '../components/users/Userresults'
+import Useritem from '../components/users/Useritem'
 
 
 
@@ -26,7 +27,8 @@ const Home = () => {
     <>
       {/* {import.meta.env.VITE_GITHUB_TOKEN} */}
       {/* search component */}
-      <UserResults />
+      <Userresults />
+      {/* <Useritem /> */}
       
     </>
   )
