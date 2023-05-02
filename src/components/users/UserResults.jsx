@@ -7,7 +7,6 @@ import GithubContext from '../../context/github/GithubContext'
 
 
 
-herllo
 
 
 const UserResults = () => {
