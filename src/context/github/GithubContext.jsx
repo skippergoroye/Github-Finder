@@ -23,7 +23,7 @@ export const GithubProvider = ({ children }) => {
   //  https://api.github.com/search/users?q=brad
 
    // Get Search Result
-    const searchUsers = async (text) => {
+const searchUsers = async (text) => {
       setLoading()
 
       const params = new URLSearchParams({
@@ -45,17 +45,25 @@ export const GithubProvider = ({ children }) => {
           })  
       }
 
+        // Clear users from state
+        const clearUsers = () => dispatch({ type: 'CLEAR_USERS'})
+
         // set Loading
         const setLoading = () => dispatch({type: 'SET_LOADING'})
 
 
-    return <GithubContext.Provider value={{
-        users: state.users,
-        loading: state.loading,
-        searchUsers,
-    }}>
-      {children}
-    </GithubContext.Provider>
+
+
+
+          return <GithubContext.Provider value={{
+              users: state.users,
+              loading: state.loading,
+              searchUsers,
+              clearUsers
+
+          }}>
+            {children}
+          </GithubContext.Provider>
 }
 
 
