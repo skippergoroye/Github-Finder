@@ -1,6 +1,6 @@
 import React from 'react'
-import Userresults from '../components/users/Userresults'
-import Useritem from '../components/users/Useritem'
+import UserResults from '../components/users/UserResults'
+import UserItem from '../components/users/UserItem'
 
 
 
@@ -16,7 +16,7 @@ const Home = () => {
 
   // .env
   // VITE_GITHUB_URL = https://api.github.com
-  // VITE_GITHUB_TOKEN=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
+
 
 
   // console.log(import.meta.env.VITE_GITHUB_URL) // 123
@@ -27,8 +27,7 @@ const Home = () => {
     <>
       {/* {import.meta.env.VITE_GITHUB_TOKEN} */}
       {/* search component */}
-      <Userresults />
-      {/* <Useritem /> */}
+      <UserResults />
       
     </>
   )
