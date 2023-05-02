@@ -1,6 +1,8 @@
 import React from 'react'
 import UserResults from '../components/users/UserResults'
-import UserItem from '../components/users/UserItem'
+import UserSearch from '../components/users/UserSearch'
+
+
 
 
 
@@ -22,6 +24,7 @@ const Home = () => {
       {/* {import.meta.env.VITE_SOME_KEY} */}
       {/* search component */}
       <UserResults />
+      <UserSearch />
       
     </>
   )
